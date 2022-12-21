@@ -11,8 +11,8 @@ locals {
 
 
 module "resource_group" {
-  source  = "iancrosby050/microservices/aws"
-  version = "~> 0.10.0"
+  source  = "iancrosby050/microservices/aws//modules/resource-group"
+  version = "1.0.1"
 
   count = (var.resource_group_enabled && var.module_tags_enabled) ? 1 : 0
 
