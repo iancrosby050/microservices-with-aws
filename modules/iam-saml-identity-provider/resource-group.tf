@@ -23,7 +23,7 @@ module "resource_group" {
     resource_tags = local.module_tags
   }
 
-  module_tags_enabled = false
+  module_tags_enabled = true
   tags = merge(
     local.module_tags,
     var.tags,
