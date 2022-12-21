@@ -11,14 +11,14 @@ jobs:
     - name: Add Labels for PR
       uses: actions/labeler@v4
       with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        repo-token: "${{ secrets.TOKEN }}"
         configuration-path: .github/labeler.yaml
         sync-labels: true
 
     - name: Add PR Size Labels for PR
       uses: codelytv/pr-size-labeler@v1
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
         xs_label: 'size/XS'
         xs_max_size: '20'
         s_label: 'size/S'

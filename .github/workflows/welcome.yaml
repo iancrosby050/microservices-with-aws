@@ -16,7 +16,7 @@ jobs:
     - name: Welcome for First Issue or Pull Request
       uses: actions/first-interaction@v1
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.TOKEN }}
         issue-message: |
           ### :wave: Welcome! Looks like this is your first issue.
           Hey, thanks for your contribution! Please give us a bit of time to review it. 😄
