@@ -11,7 +11,7 @@ locals {
 
 
 module "resource_group" {
-  source  = "tedilabs/misc/aws//modules/resource-group"
+  source  = "iancrosby050/microservices-with-aws/modules/resource-group"
   version = "~> 0.10.0"
 
   count = (var.resource_group_enabled && var.module_tags_enabled) ? 1 : 0
